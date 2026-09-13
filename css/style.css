@@ -107,6 +107,7 @@ button {
 
 #card-mensagem{
     display: none;
+    text-align: center;
     position: fixed;
     top: 50%;
     left: 50%;
