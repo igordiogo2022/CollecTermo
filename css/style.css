@@ -121,3 +121,26 @@ button {
     z-index: 11;
     border: 2px solid white;
 }
+
+@media (max-width: 500px) {
+    input {
+        width: 100%;
+    }
+
+    button {
+        border-radius: 6px;
+        width: 50%;
+    }
+    
+    .palavra{
+        gap: 5%;
+    }
+
+    .letra{
+        font-size: 16px;
+    }
+
+    #card-mensagem{
+        width: 90%;
+    }
+}
