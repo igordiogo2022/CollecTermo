@@ -107,7 +107,6 @@ button {
 
 #card-mensagem{
     display: none;
-    text-align: center;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -121,6 +120,10 @@ button {
     background-color: var(--cor1);
     z-index: 11;
     border: 2px solid white;
+}
+
+.paragrafo-centralizado {
+    text-align: center;
 }
 
 @media (max-width: 500px) {

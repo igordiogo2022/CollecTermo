@@ -177,7 +177,7 @@ function exibir_mensagem(mensagem){
 
     }else if(mensagem == "vitoria"){
         conteudo = `<h1>Você acertou!!!</h1>
-        <p>Você acertou a palavra do dia, volte amanhã para jogar novamente.</p>
+        <p class="paragrafo-centralizado">Você acertou a palavra do dia, volte amanhã para jogar novamente.</p>
         <p>
             🔡 Palavra do dia: ${dados.palavra_diaria} <br>
             📅 Dias jogados: ${dados.dias_jogados} <br>
@@ -188,7 +188,7 @@ function exibir_mensagem(mensagem){
 
     }else if(mensagem == "derrota"){
         conteudo = `<h1>Você errou!!!</h1>
-        <p>Você errou a palavra do dia, volte amanhã para tentar novamente.</p>
+        <p class="paragrafo-centralizado">Você errou a palavra do dia, volte amanhã para tentar novamente.</p>
         <p>
             🔡 Palavra do dia: ${dados.palavra_diaria} <br>
             📅 Dias jogados: ${dados.dias_jogados} <br>
@@ -199,7 +199,7 @@ function exibir_mensagem(mensagem){
     
     }else if(mensagem == "nome_invalido"){
         conteudo = `<h1>❌ Erro</h1>
-        <p>Palavra digitada não está no banco de dados ou não foi digitada corretamente.</p>
+        <p class="paragrafo-centralizado">Palavra digitada não está no banco de dados ou não foi digitada corretamente.</p>
         <button onclick="fechar_mensagem()">Continuar</button>`;
     }
 
