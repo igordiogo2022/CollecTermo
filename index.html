@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/collectors.png" type="image/x-icon">
+    <title>CollecTermo</title>
+</head>
+<body>
+    <h1>CollecTermo</h1>
+    <main>
+        <input type="text" id="palavra-input" autofocus>
+        <button onclick="verificar_tentativa()" id="btn-enviar-tentativa">Enviar</button>
+        <p id="tentativas">Tentativas restantes: 6</p>
+        <div id="quadro-palavras">
+        </div>
+    </main>
+
+    <div id="overlay"></div>
+
+    <div id="card-mensagem">
+    </div>
+    
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/3802d20ec1.js" crossorigin="anonymous"></script>
+</body>
+</html>

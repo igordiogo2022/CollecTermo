@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor1: #000c4e;
+    --cor2: #000524;
+    --cor3: #0f5db6;
+    --cor4: #008000;
+    --cor5: #b8860b;
+    --cor6: #808080;
+    
+    --fonte: "Poppins", "sans-serif";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0;
+    font-family: var(--fonte);
+    gap: 20px;
+    background-color: var(--cor1);
+    color: white;
+}
+
+h1{
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    gap: 20px;
+}
+
+input {
+    background-color: var(--cor1);
+    color: white;
+    border: 0;
+    text-align: center;
+    width: 30%;
+    font-size: 18px;
+    padding: 0.5% 0;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+button {
+    padding: 1%;
+    border-radius: 12px;
+    border: 0;
+    width: 15%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#quadro-palavras{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.palavra{
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+}
+
+.letra{
+    font-size: 25px;
+    font-family: monospace;
+    background-color: var(--cor2);
+    color: white;
+    padding: 0 10%;
+    border-radius: 3px;
+}
+
+.correto{
+    background-color: var(--cor4);
+}
+
+.quase{
+    background-color: var(--cor5);
+}
+
+.errado{
+    background-color: var(--cor6);
+}
+
+#overlay{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #0000008a;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+}
+
+#card-mensagem{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    border-radius: 12px;
+    padding: 2%;
+    background-color: var(--cor1);
+    z-index: 11;
+    border: 2px solid white;
+}
